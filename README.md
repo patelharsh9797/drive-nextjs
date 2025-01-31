@@ -27,3 +27,14 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+## TODO
+
+- [ ] Set up database and data model
+- [ ] Move folder open state to URL
+- [ ] Add auth
+- [ ] Add file uploading
+- [ ] Add analytics
+- [ ] Make sure sort order is consistent
+- [ ] Add delete
+- [ ] Real homepage + onboarding
