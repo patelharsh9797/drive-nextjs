@@ -1,7 +1,8 @@
 import { FileIcon, Folder as FolderIcon } from "lucide-react";
 import { type File, type Folder } from "~/lib/mock-data";
+import { type DB_FileType, type DB_FolderType } from "~/server/db/schema";
 
-export function FileRow(props: { file: File }) {
+export function FileRow(props: { file: DB_FileType }) {
   const { file } = props;
 
   return (
@@ -28,7 +29,7 @@ export function FileRow(props: { file: File }) {
 }
 
 export function FolderRow(props: {
-  folder: Folder;
+  folder: DB_FolderType;
   handleFolderClick: () => void;
 }) {
   const { folder, handleFolderClick } = props;
