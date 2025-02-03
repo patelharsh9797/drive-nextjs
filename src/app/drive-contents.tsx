@@ -9,9 +9,8 @@ import { type DB_FileType, type DB_FolderType } from "~/server/db/schema";
 export default function DriveContents(props: {
   files: DB_FileType[];
   folders: DB_FolderType[];
+  parents: DB_FolderType[];
 }) {
-  const breadcrumbs: unknown[] = [];
-
   const handleUpload = () => {
     alert("Upload functionality would be implemented here");
   };
@@ -24,12 +23,11 @@ export default function DriveContents(props: {
             <Link href={`/f/1`} className="mr-2 text-gray-300 hover:text-white">
               My Drive
             </Link>
-            {breadcrumbs.map((folder) => (
+            {props.parents.map((folder) => (
               <div key={folder.id} className="flex items-center">
                 <ChevronRight className="mx-2 text-gray-500" size={16} />
                 <Link
                   href={`/f/${folder.id}`}
-                  variant="ghost"
                   className="text-gray-300 hover:text-white"
                 >
                   {folder.name}
