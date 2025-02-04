@@ -18,6 +18,8 @@ export const env = createEnv({
 
     // CLERK_SECRET_KEY: z.string(),
 
+    UPLOADTHING_TOKEN: z.string(),
+
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
@@ -52,6 +54,7 @@ export const env = createEnv({
     //   process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
     // CLERK_SECRET_KEY: process.env.CLERK_SECRET_KEY,
 
+    UPLOADTHING_TOKEN: process.env.UPLOADTHING_TOKEN,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

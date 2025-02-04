@@ -32,7 +32,7 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 
 - [x] Set up database and data model
 - [x] Move folder open state to URL
-- [ ] Add auth
+- [x] Add auth
 - [ ] Add file uploading
 - [ ] Add analytics
 - [ ] Make sure sort order is consistent
