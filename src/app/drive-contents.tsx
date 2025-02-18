@@ -12,6 +12,7 @@ export default function DriveContents(props: {
   files: DB_FileType[];
   folders: DB_FolderType[];
   parents: DB_FolderType[];
+  currentFolderId: number;
 }) {
   const navigate = useRouter();
 
@@ -68,6 +69,9 @@ export default function DriveContents(props: {
           }}
           onUploadError={(error: Error) => {
             alert(`ERROR! ${error.message}`);
+          }}
+          input={{
+            folderId: props.currentFolderId,
           }}
         />
       </div>

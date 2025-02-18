@@ -1,6 +1,5 @@
 import { FileIcon, Folder as FolderIcon } from "lucide-react";
 import Link from "next/link";
-import { type File, type Folder } from "~/lib/mock-data";
 import { type DB_FileType, type DB_FolderType } from "~/server/db/schema";
 
 export function FileRow(props: { file: DB_FileType }) {
